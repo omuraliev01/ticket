@@ -1,0 +1,223 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,700;1,300&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;1,300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,600;1,200&family=Poppins:ital,wght@0,100;0,300;0,400;0,700;1,300&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;1,300&display=swap');
+*{
+  padding: 0;
+  margin: 0;
+}
+
+.header {
+  height: 120px;
+  background:#f01e1eea;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.header .title{
+  font-family: 'Poppins', sans-serif;
+  text-transform: uppercase;
+  font-weight: 500;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.logo{
+  width: 40px;
+  height: 40px;
+  margin-left: 6px;
+}
+.subtitle{
+  font-family: 'Poppins', sans-serif;
+  font-size: 14px;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.star{
+  width: 20px;
+  height: 20px;
+  margin-left: 5px;
+}
+.ticket{
+  position: relative;
+  /* height: 736px; */
+  background: #2892e9ea;
+  text-align: start;
+  /* padding: 25px; */
+}
+.ticket::before{
+  /* position: absolute; */
+  content: '';
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  top: 25px;
+  left: -17px;
+  z-index: 1;
+  background-color: white;
+}
+.ticket::after{
+  /* position: absolute; */
+  content: '';
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  top: 25px;
+  right:-17px;
+  z-index: 1;
+  background-color: white;
+}
+.ticket .title{
+  font-family: 'Nunito', sans-serif;
+  color: white;
+  font-size: 24px;
+  font-weight: 600;
+  padding-left: 25px;
+  padding-top: 25px;
+}
+.ticket .subtitle{
+  padding-top: 10px;
+  display: flex;
+  width: 235px;
+  justify-content: space-between;
+  padding-left: 25px;
+} 
+.ticket .subtitle .description{
+  font-size: 14px;
+  
+}
+.borders {
+  border-bottom:2px ridge #fff;
+  position: absolute;
+  left: 0;
+  width: 100%;
+  margin-top: 15px;
+  position: relative;
+}
+
+.ticket .container1{
+  display: flex;
+  border-bottom: 2px solid #fff;
+  padding-left: 25px;
+  padding-bottom: 10px;
+  margin: 0;  
+}
+.ticket .date {
+  display: flex;
+  margin-top: 35px;
+}.ticket .date .number {
+  font-family: 'Nunito', sans-serif;
+  color: white;
+  font-size: 42px;
+  font-weight: 600;
+}
+.ticket .date1{
+  flex-direction: column;
+  margin-top: 7px;
+  padding-left: 2px;
+}
+.ticket .date1 .date-description{
+  font-family: 'Nunito', sans-serif;
+  color: white;
+  font-size: 15px;
+  font-weight: 400;
+}
+.ticket .line-column {
+  margin-top: 25px;
+  flex-direction: column;
+}
+.ticket .time{
+  display: flex;
+  justify-content: space-between;
+  width: 250px;
+  margin-left: 25px;
+}
+.ticket .time .time1{
+  font-family: 'Nunito', sans-serif;
+  color: white;
+  font-size: 18px;
+  font-weight: bolder;
+}
+.ticket .line-column .bdr{
+  border-bottom: 2px solid #fff;
+  width: 250px;
+  margin-left: 25px;
+  margin-top: 5px;
+  position: relative;
+  margin-bottom: 5px;
+}
+.ticket .line-column .bdr::before{
+  position: absolute;
+  content: "";
+  border-radius: 50%;
+  width: 7px;
+  height: 7px;
+  background: #fff;
+  top: -2px;
+
+}
+.ticket .line-column .bdr::after{
+  position: absolute;
+  content: "";
+  border-radius: 50%;
+  width: 7px;
+  height: 7px;
+  background: #fff;
+  top: -2px;
+  right: 0;
+}
+.ticket .time:nth-child(2){
+  margin: 0;
+}
+.ticket .place{
+  color: white;
+  font-size: 11px;
+  font-family: 'Nunito', sans-serif;
+  font-weight: normal;
+}
+.ticket .terminal{
+  display: flex;
+  justify-content: space-between;
+  padding: 15px 30px 10px 30px;
+}
+.ticket .terminal-description1{
+  width: 60px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.ticket .terminal .description {
+  color: white;
+  font-size: 12px;
+  font-family: 'Nunito', sans-serif;
+  font-weight: normal;
+  text-transform: uppercase ;
+  /* text-align: center;
+  justify-content: center;
+  align-items: center;
+  width: 100px; */
+}
+.ticket .terminal:nth-child(7) {
+  padding: 10px 40px;
+}
+hr {
+  background-color: #fff;
+}
+.qrcode1{
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
+
+}
+
+@media (min-width: 375px){
+  .container1 .time{
+    width: 215px;
+  }
+  .ticket .line-column .bdr{
+    width: 215px;
+  }
+}
